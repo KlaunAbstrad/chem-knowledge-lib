@@ -6,7 +6,7 @@ Includes fully solved exercises.
 import math
 from pathlib import Path
 
-WIKI = Path(r'E:/knowledge_lib/化工流程/wiki')
+WIKI = Path(r'E:/knowledge_lib/chem-knowledge-base/wiki')
 COURSE = WIKI / '化工流程'
 
 def write(folder, filename, content):

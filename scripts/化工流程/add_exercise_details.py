@@ -18,7 +18,7 @@ SOLUTION_MARKERS = [
     '## 计算过程',
 ]
 
-BASE = Path(r'E:/knowledge_lib/化工流程')
+BASE = Path(r'E:/knowledge_lib/chem-knowledge-base')
 
 for dir_path in EXERCISE_DIRS:
     full_dir = BASE / dir_path

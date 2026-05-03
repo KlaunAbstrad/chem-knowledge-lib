@@ -5,7 +5,7 @@ Run: PYTHONIOENCODING=utf-8 python scripts/migrate.py
 import shutil
 from pathlib import Path
 
-BASE = Path(r'E:/knowledge_lib/化工流程')
+BASE = Path(r'E:/knowledge_lib/chem-knowledge-base')
 
 def mv(src, dst):
     """Move file/dir, creating parent dirs."""

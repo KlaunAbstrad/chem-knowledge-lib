@@ -4,7 +4,7 @@ Solve remaining exercises for Chapters 5, 7, 9
 import math
 from pathlib import Path
 
-COURSE = Path(r'E:/knowledge_lib/化工流程/docs/化工流程')
+COURSE = Path(r'E:/knowledge_lib/chem-knowledge-base/docs/化工流程')
 
 def write(folder, filename, content):
     folder.mkdir(parents=True, exist_ok=True)

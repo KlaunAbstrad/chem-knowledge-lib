@@ -7,8 +7,8 @@ import time
 from pdf2image import convert_from_path
 import pytesseract
 
-PDF_DIR = r'E:/knowledge_lib/化工流程/raw/化工流程/scan'
-OUTPUT_DIR = r'E:/knowledge_lib/化工流程/raw/化工流程/text'
+PDF_DIR = r'E:/knowledge_lib/chem-knowledge-base/raw/化工流程/scan'
+OUTPUT_DIR = r'E:/knowledge_lib/chem-knowledge-base/raw/化工流程/text'
 DPI = 300
 LANG = 'chi_sim+eng'
 

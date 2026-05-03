@@ -5,8 +5,8 @@ Version 2 - Improved parsing
 import re
 from pathlib import Path
 
-RAW_DIR = Path(r'E:/knowledge_lib/化工流程/raw/text')
-WIKI_DIR = Path(r'E:/knowledge_lib/化工流程/wiki')
+RAW_DIR = Path(r'E:/knowledge_lib/chem-knowledge-base/raw/text')
+WIKI_DIR = Path(r'E:/knowledge_lib/chem-knowledge-base/wiki')
 
 CHAPTERS = [
     {'key': '第四章_相平衡', 'title': '第四章 相平衡基础', 'dir': '第四章_相平衡'},

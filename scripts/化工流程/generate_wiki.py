@@ -4,7 +4,7 @@ Based on the OCR content but with cleaned text and proper math notation.
 """
 from pathlib import Path
 
-WIKI = Path(r'E:/knowledge_lib/化工流程/wiki')
+WIKI = Path(r'E:/knowledge_lib/chem-knowledge-base/wiki')
 
 def slug(s):
     return s.replace(' ', '_').replace('-', '_').replace('（', '').replace('）', '').replace('，', '')

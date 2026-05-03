@@ -4,7 +4,7 @@ Solve Chapter 7 exercises - FUG method for multicomponent distillation
 import math
 from pathlib import Path
 
-COURSE = Path(r'E:/knowledge_lib/化工流程/docs/化工流程')
+COURSE = Path(r'E:/knowledge_lib/chem-knowledge-base/docs/化工流程')
 CH7_EX = COURSE / '第七章' / 'exercises'
 
 def write(folder, filename, content):
