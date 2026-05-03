@@ -22,8 +22,8 @@ const giscusContainer = ref(null)
 const GISCUS_CONFIG = {
   repo: 'KlaunAbstrad/chem-knowledge-lib',
   repoId: 'R_kgDOSS5fwA',
-  category: 'General',
-  categoryId: 'DIC_kwDOB',   // ← 待你从 giscus.app 获取
+  category: 'Comments',
+  categoryId: 'DIC_kwDOSS5fwM4C8Pcx',
 }
 
 let scriptLoaded = false
