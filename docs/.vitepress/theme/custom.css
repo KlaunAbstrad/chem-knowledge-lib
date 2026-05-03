@@ -1,0 +1,61 @@
+/* KaTeX overrides */
+.katex { font-size: 1.05em; }
+
+/* Table improvements */
+.vp-doc table {
+  font-size: 0.9em;
+}
+
+.vp-doc table th {
+  white-space: nowrap;
+}
+
+/* Chinese typography */
+.vp-doc {
+  text-align: justify;
+}
+
+/* Exercise page styling */
+.exercise-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand);
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* details/summary for solution toggle */
+.vp-doc details.solution {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc details.solution > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--vp-c-brand);
+  font-size: 0.95em;
+}
+
+.vp-doc details.solution[open] {
+  padding-bottom: 16px;
+}
+
+/* Responsive table wrap */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Feedback form separator */
+.feedback-wrapper {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+}

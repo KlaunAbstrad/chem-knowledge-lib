@@ -1,0 +1,19 @@
+node_modules/
+dist/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+
+# Raw PDFs are too large — only track OCR text
+raw/*/ebook/
+raw/*/scan/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / Editor
+.env
+.DS_Store
+.claude/
+.obsidian/
