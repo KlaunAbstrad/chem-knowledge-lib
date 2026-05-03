@@ -4,7 +4,10 @@
 
 ### 修复
 
-- **KaTeX 公式渲染修复**：CSS 样式表改从本地 npm 包加载，消除 KaTeX JS (0.16.45) 与 CDN CSS (0.16.11) 的版本不匹配，解决公式排版混乱问题
+- **KaTeX 公式渲染彻底修复**：
+  1. CSS 从本地 npm 加载（消除 0.16.45 vs 0.16.11 CDN 版本不匹配）
+  2. 替换 `markdown-it-katex` 内嵌的 **KaTeX 0.6.0（2016 年）** → **0.16.45**，解决 `\tag` 不被识别、下标/求和符号定位错误等问题
+  3. 添加 `postinstall` 脚本确保 `npm install` 后自动修复嵌套版本
 - **GitHub Pages 自动启用**：`deploy.yml` 添加 `enablement: true` 参数，自动启用 Pages
 - **VitePress 配置修正**：`base` 路径设为 `/chem-knowledge-lib/`，`editLink` 和 `socialLinks` 指向正确的仓库地址
 
