@@ -53,8 +53,8 @@
   overflow-x: auto;
 }
 
-/* Feedback form separator */
-.feedback-wrapper {
+/* Comment section separator */
+.comment-wrapper {
   margin-top: 64px;
   padding-top: 24px;
   border-top: 1px solid var(--vp-c-divider);
