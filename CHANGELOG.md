@@ -2,31 +2,64 @@
 
 ## 2026-05-03
 
-### 修复
-
-- **KaTeX 公式渲染彻底修复**：
-  1. CSS 从本地 npm 加载（消除 0.16.45 vs 0.16.11 CDN 版本不匹配）
-  2. 替换 `markdown-it-katex` 内嵌的 **KaTeX 0.6.0（2016 年）** → **0.16.45**，解决 `\tag` 不被识别、下标/求和符号定位错误等问题
-  3. 添加 `postinstall` 脚本确保 `npm install` 后自动修复嵌套版本
-- **GitHub Pages 自动启用**：`deploy.yml` 添加 `enablement: true` 参数，自动启用 Pages
-- **VitePress 配置修正**：`base` 路径设为 `/chem-knowledge-lib/`，`editLink` 和 `socialLinks` 指向正确的仓库地址
-
-### 部署
+### 部署与基础设施
 
 - 仓库创建并推送到 GitHub ([KlaunAbstrad/chem-knowledge-lib](https://github.com/KlaunAbstrad/chem-knowledge-lib))
 - GitHub Actions 自动部署到 GitHub Pages：`https://klaunabstrad.github.io/chem-knowledge-lib/`
+- `deploy.yml` 添加 `enablement: true` 参数，自动启用 Pages
+- VitePress 配置修正：`base` 路径、`editLink`、`socialLinks`
 
-### 新增
+### KaTeX 公式渲染修复
 
-- **4 道章节例题**：
-  - 例 7.1 FUG 全流程计算（物料衡算→露点/泡点迭代→Antoine→α→Fenske→Underwood→Gilliland→Kirkbride）
-  - 例 4.1 Antoine 方程计算饱和蒸气压
-  - 例 4.2 Peng-Robinson 状态方程求摩尔体积
-  - 例 9.1 多组分吸收塔设计（K值→液气比→Kremser板数→非关键组分吸收率）
-- **补遗漏知识点**：
-  - 第 4 章新增 Peng-Robinson 状态方程条目（Z 三次方程、α(T) 修正因子）
-  - 第 9 章补充 Horton-Franklin 通用多板方程推导
-- 每道例题完整演示 **Antoine → Psat → K → α** 的计算链条，"计算"而非"查表"
+- CSS 从本地 npm 加载（消除 0.16.45 vs 0.16.11 CDN 版本不匹配）
+- 替换 `markdown-it-katex` 内嵌的 **KaTeX 0.6.0（2016 年）** → **0.16.45**，解决 `\tag` 不被识别、下标/求和符号定位错误
+- `package.json` 添加 `postinstall` 脚本确保持久化
+
+### 文档
+
+- 重写 `README.md`：课程覆盖、功能特性、技术栈、项目结构、内容规范、部署流程
+- 创建 `CHANGELOG.md`
+
+### 知识库内容 — 例题补全（7 道）
+
+| 例题 | 章节 | 内容 |
+|------|:----:|------|
+| 例 4.1 | 第 4 章 | Antoine 方程计算饱和蒸气压 |
+| 例 4.2 | 第 4 章 | Peng-Robinson 状态方程求摩尔体积 |
+| 例 5.1 | 第 5 章 | 光滑管 vs 粗糙管管内压降 |
+| 例 5.3 | 第 5 章 | 套管换热器完整设计（7 步流程） |
+| 例 7.1 | 第 7 章 | FUG 全流程计算（物料衡算→露点/泡点迭代→Antoine→α→Fenske→Underwood→Gilliland→Kirkbride） |
+| 例 9.1 | 第 9 章 | 多组分吸收塔设计（K值→液气比→Kremser板数→非关键组分吸收率） |
+| 例 9.2 | 第 9 章 | VOC 解吸塔设计（气液比→解吸因子→出水浓度） |
+
+每道例题完整演示 **Antoine → Psat → K → α** 的计算链条，"计算"而非"查表"。
+
+### 知识库内容 — 遗漏知识点补全
+
+- **第 4 章**：新增 Peng-Robinson 状态方程条目（Z 三次方程、α(T) 修正因子、PR→Vi→Wilson→γi→Ki 计算链条）
+- **第 9 章**：补充 Horton-Franklin 通用多板方程推导（Kremser 方程的理论前置）
+- **第 5 章**：补回被跳过的 5.4 节（遗传算法优化换热器：种群/适应度/交叉/变异/GA 流程）
+
+### 知识库内容 — 公式符号说明完善
+
+- 5.1.3 平均温度差：补全 $T_{h,i}, T_{h,o}, T_{c,i}, T_{c,o}, R, P$ 定义
+- 5.2.2 壳程传热系数：补全 Kern 公式所有符号（$G_s, Pr, \mu, \mu_w, k, A_s$ 等）
+- 5.3.1 管内阻力：补全三方程的 $R, N_s, L, \rho, u, d_i, \mu$ 说明
+- 5.3.2 壳程阻力：补全 $\rho, u_s, Re_s, B, d_s$ 及排列校正系数
+
+### 网站功能
+
+- **评论区**：用 Giscus（GitHub Discussions 驱动）替换静默反馈表单，每篇文章底部可登录评论
+- **术语索引**：40+ 个核心概念按 A-Z 排列，含公式和文章跳转链接，顶部导航栏可直达
+- **章节间交叉引用**：4.1.1/7.2/9.1 等关键页面添加"前置知识"和"后续应用"板块
 - 习题索引页补充"计算说明"，链接到对应例题的方法讲解
-- 第 9 章补充 Horton-Franklin 通用多板方程推导
-- 第 9 章新增例 9.2（VOC 解吸塔设计）
+
+### 知识库当前规模
+
+| 章节 | 理论条目 | 例题 | 习题解答 | 合计 |
+|------|:------:|:---:|:------:|:----:|
+| 第 4 章 相平衡基础 | 5 | 2 | 5 | 12 |
+| 第 5 章 换热器设计 | 9 | 2 | 6 | 17 |
+| 第 7 章 多组分精馏 | 4 | 1 | 5 | 10 |
+| 第 9 章 吸收与解吸 | 2 | 2 | 5 | 9 |
+| **总计** | **20** | **7** | **21** | **48 + 索引** |
