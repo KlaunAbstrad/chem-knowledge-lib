@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import FeedbackForm from './components/FeedbackForm.vue'
+import 'katex/dist/katex.min.css'
 import './custom.css'
 
 export default {
