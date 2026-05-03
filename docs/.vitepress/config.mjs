@@ -120,6 +120,7 @@ export default defineConfig({
   title: '化学知识库',
   description: '化工流程 · 化工原理 · 有机化学 — 可增长的化学维基百科',
   lang: 'zh-CN',
+  base: '/chem-knowledge-lib/',
   cleanUrls: true,
 
   themeConfig: {
@@ -162,12 +163,12 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/KlaunAbstrad/chem-knowledge-base/edit/main/docs/:path',
+      pattern: 'https://github.com/KlaunAbstrad/chem-knowledge-lib/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/KlaunAbstrad/chem-knowledge-base' },
+      { icon: 'github', link: 'https://github.com/KlaunAbstrad/chem-knowledge-lib' },
     ],
   },
 
