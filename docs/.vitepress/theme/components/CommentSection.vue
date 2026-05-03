@@ -16,24 +16,30 @@
 import { ref, onMounted, watch } from 'vue'
 import { useData } from 'vitepress'
 
-const { page, isDark } = useData()
+const { isDark } = useData()
 const giscusContainer = ref(null)
+
+const GISCUS_CONFIG = {
+  repo: 'KlaunAbstrad/chem-knowledge-lib',
+  repoId: 'R_kgDOSS5fwA',
+  category: 'General',
+  categoryId: 'DIC_kwDOB',   // ← 待你从 giscus.app 获取
+}
 
 let scriptLoaded = false
 
 function loadGiscus() {
   if (!giscusContainer.value) return
 
-  // Remove previous giscus widget if any
   const existing = giscusContainer.value.querySelector('giscus-widget')
   if (existing) existing.remove()
 
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
-  script.setAttribute('data-repo', 'KlaunAbstrad/chem-knowledge-lib')
-  script.setAttribute('data-repo-id', 'R_kg_DOON_TEST') // 替换为实际 Repo ID
-  script.setAttribute('data-category', 'Announcements')
-  script.setAttribute('data-category-id', 'DIC_kw_DOON_TEST') // 替换为实际 Category ID
+  script.setAttribute('data-repo', GISCUS_CONFIG.repo)
+  script.setAttribute('data-repo-id', GISCUS_CONFIG.repoId)
+  script.setAttribute('data-category', GISCUS_CONFIG.category)
+  script.setAttribute('data-category-id', GISCUS_CONFIG.categoryId)
   script.setAttribute('data-mapping', 'pathname')
   script.setAttribute('data-strict', '0')
   script.setAttribute('data-reactions-enabled', '1')
@@ -43,6 +49,11 @@ function loadGiscus() {
   script.setAttribute('data-lang', 'zh-CN')
   script.setAttribute('crossorigin', 'anonymous')
   script.async = true
+
+  script.onerror = () => {
+    giscusContainer.value.innerHTML =
+      '<p style="color:var(--vp-c-text-3);font-size:14px;">评论区暂未配置完成。请确认 GitHub Discussions 已启用、Giscus App 已安装、且 category-id 已正确填入。</p>'
+  }
 
   giscusContainer.value.appendChild(script)
   scriptLoaded = true
@@ -54,7 +65,6 @@ onMounted(() => {
 
 watch(isDark, () => {
   if (scriptLoaded) {
-    // Send theme change message to giscus
     const iframe = document.querySelector('iframe.giscus-frame')
     if (iframe) {
       iframe.contentWindow.postMessage(

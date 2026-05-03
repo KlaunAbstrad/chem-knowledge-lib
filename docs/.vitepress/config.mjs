@@ -7,6 +7,7 @@ const sidebar = {
       text: '化工流程',
       items: [
         { text: '课程首页', link: '/化工流程/' },
+        { text: '术语索引 (A-Z)', link: '/化工流程/术语索引' },
         {
           text: '第四章 相平衡基础',
           collapsed: false,
@@ -138,6 +139,7 @@ export default defineConfig({
       { text: '化工流程', link: '/化工流程/' },
       { text: '化工原理', link: '/化工原理/' },
       { text: '有机化学', link: '/有机化学/' },
+      { text: '术语索引', link: '/化工流程/术语索引' },
       { text: '关于', link: '/about' },
     ],
 
