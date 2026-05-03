@@ -16,9 +16,14 @@
 - 仓库创建并推送到 GitHub ([KlaunAbstrad/chem-knowledge-lib](https://github.com/KlaunAbstrad/chem-knowledge-lib))
 - GitHub Actions 自动部署到 GitHub Pages：`https://klaunabstrad.github.io/chem-knowledge-lib/`
 
-### 初始内容
+### 新增
 
-- 化工流程：第 4 章（相平衡基础）、第 5 章（换热器设计）、第 7 章（多组分精馏简捷计算）、第 9 章（多组分吸收和解吸简捷计算）
-- 共 25 篇知识条目 + 21 道习题详细解答
-- VitePress 站点框架：KaTeX 数学公式渲染、本地搜索、侧边栏导航、反馈表单组件
-- 化工原理、有机化学保留目录框架，内容待建设
+- **4 道章节例题**：
+  - 例 7.1 FUG 全流程计算（物料衡算→露点/泡点迭代→Antoine→α→Fenske→Underwood→Gilliland→Kirkbride）
+  - 例 4.1 Antoine 方程计算饱和蒸气压
+  - 例 4.2 Peng-Robinson 状态方程求摩尔体积
+  - 例 9.1 多组分吸收塔设计（K值→液气比→Kremser板数→非关键组分吸收率）
+- **补遗漏知识点**：
+  - 第 4 章新增 Peng-Robinson 状态方程条目（Z 三次方程、α(T) 修正因子）
+  - 第 9 章补充 Horton-Franklin 通用多板方程推导
+- 每道例题完整演示 **Antoine → Psat → K → α** 的计算链条，"计算"而非"查表"
