@@ -20,8 +20,8 @@
 - [闪蒸计算](4.2_闪蒸计算.md)
 
 ### 例题精讲
-- [例 4.1 Antoine 方程计算饱和蒸气压](4.3_例4.1_Antoine方程.md)
-- [例 4.2 Peng-Robinson 状态方程求摩尔体积](4.4_例4.2_Peng-Robinson摩尔体积.md)
+- [例 4.1 Antoine 方程计算饱和蒸气压](例4.1_Antoine方程.md)
+- [例 4.2 Peng-Robinson 状态方程求摩尔体积](例4.2_Peng-Robinson摩尔体积.md)
 
 ### 习题
 - [全部习题](exercises/index.md)

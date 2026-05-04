@@ -9,7 +9,7 @@
 
 > **前置知识**：
 > - **必修**：[第 4 章 相平衡基础](../第四章_相平衡/) — Antoine 方程、$K_i$ 计算、$\alpha_{ij}$ 计算、泡点/露点迭代
-> - $\alpha_{ij}$ 必须从 Antoine 方程计算 $P^{\text{sat}} / P$ 导出，不可查表 → [例 4.1](../第四章_相平衡/4.3_例4.1_Antoine方程.md)
+> - $\alpha_{ij}$ 必须从 Antoine 方程计算 $P^{\text{sat}} / P$ 导出，不可查表 → [例 4.1](../第四章_相平衡/例4.1_Antoine方程.md)
 
 ## 目录
 
@@ -17,7 +17,7 @@
 - [Fenske 方程 — 最少理论板数](7.2_Fenske方程.md)
 - [Underwood 方程 — 最小回流比](7.3_Underwood方程.md)
 - [Gilliland 关联式 — 实际理论板数](7.4_Gilliland关联式.md)
-- [例 7.1 FUG 全流程计算](7.5_例7.1_FUG全流程计算.md)
+- [例 7.1 FUG 全流程计算](例7.1_FUG全流程计算.md)
 
 ### 习题
 - [全部习题](exercises/index.md)
