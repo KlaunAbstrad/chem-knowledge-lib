@@ -25,6 +25,10 @@ LK = 正丁烷 (nC4), HK = 异戊烷 (iC5)
 
 ::: details 点击查看解答
 
+## 求解思路
+
+完整的 FUG 三步法：Fenske → $N_{\min}$ → Underwood → $R_{\min}, R$ → Gilliland → $N$。相对挥发度 $\alpha_i$ 来自 Antoine → $P^{\text{sat}}$ → $K_i$ → $\alpha_{ij}$，不可查表。
+
 ## 计算过程
 
 ### (1) 最少理论板数

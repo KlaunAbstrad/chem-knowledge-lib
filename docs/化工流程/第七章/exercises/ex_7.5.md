@@ -31,6 +31,10 @@ LK = 异丁烷 (iC4), HK = 正丁烷 (nC4)
 
 ::: details 点击查看解答
 
+## 求解思路
+
+FUG 四步完整流程：清晰分割物料衡算 → Fenske → Underwood → Gilliland → Kirkbride。各组分的 $\alpha_i$ 由 Antoine 方程在塔顶塔底分别求 $K_i$ 后取几何平均得到，本题以 nC₅ 为基准 $\alpha = 1$。
+
 ## 计算过程
 
 ### (1) 最少理论板数 $N_{\min}$
