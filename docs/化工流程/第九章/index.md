@@ -38,12 +38,12 @@
 
 | 公式 | 编号 | 用途 |
 |------|:----:|------|
-| $A_i = L/(K_i V)$ | (9.14) | 吸收因子定义 |
-| $\phi = (A^{N+1} - A)/(A^{N+1} - 1)$ | (9.18) | Kremser 吸收率 |
-| $N = \dfrac{\log\left(\frac{A_{key} - \phi_{key}}{1 - \phi_{key}}\right)}{\log A_{key}} - 1$ | (9.13) | 反算理论板数 |
-| $A_i = A_{key} \cdot K_{key}/K_i$ | (9.17) | 非关键组分吸收因子 |
-| $S_i = K_i V/L$ | (9.22) | 解吸因子定义 |
-| $S_e = \sqrt{S_1 (S_N + 1) + 0.25} - 0.5$ | (9.26) | Edmister 有效解吸因子 |
+| $A_i = L/(K_i V)$ | (9.1) | 吸收因子定义 |
+| $\phi = (A^{N+1} - A)/(A^{N+1} - 1)$ | (9.8) | Kremser 吸收率 |
+| $N = \dfrac{\log\left(\frac{A_{key} - \phi_{key}}{1 - \phi_{key}}\right)}{\log A_{key}} - 1$ | (9.4) | 反算理论板数 |
+| $A_i = A_{key} \cdot K_{key}/K_i$ | (9.7) | 非关键组分吸收因子 |
+| $S_i = K_i V/L$ | (9.13) | 解吸因子定义 |
+| $S_e = \sqrt{S_1 (S_N + 1) + 0.25} - 0.5$ | (9.17) | Edmister 有效解吸因子 |
 
 ---
 [← 返回首页](../index.md)
