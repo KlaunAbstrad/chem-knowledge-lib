@@ -48,7 +48,7 @@ Kirkbride (7.4) → 进料位置 N_R/N_S
 | $N_{\min} = \dfrac{\log[(x_{LK}/x_{HK})_D (x_{HK}/x_{LK})_B]}{\log \alpha_{LK,HK}}$ | (7.12) | 最少理论板 |
 | $\displaystyle\sum \dfrac{\alpha_i z_{iF}}{\alpha_i - \theta} = 1 - q$ | (7.20) | Underwood 第一方程 |
 | $Y = 0.75(1 - X^{0.5668})$ | (7.22) | Gilliland 关联 |
-| $\dfrac{N_R}{N_S} = \left[\left(\dfrac{z_{HK}}{z_{LK}}\right)_F \left(\dfrac{x_{LK}}{x_{HK}}\right)_B \left(\dfrac{B}{D}\right)^{0.206}\right]^{0.206}$ | (7.24) | Kirkbride 进料位置 |
+| $\dfrac{N_R}{N_S} = \left[\left(\dfrac{z_{HK}}{z_{LK}}\right)_F \left(\dfrac{x_{LK,B}}{x_{HK,D}}\right)^2 \dfrac{B}{D}\right]^{0.206}$ | (7.24) | Kirkbride 进料位置 |
 
 ### 后续章节
 

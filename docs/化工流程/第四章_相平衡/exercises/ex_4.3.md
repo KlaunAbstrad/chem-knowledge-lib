@@ -56,9 +56,9 @@
 
 $$
 \ln \gamma_1 = 1 - \ln(x_1 + x_2\Lambda_{12} + x_3\Lambda_{13})
-- rac{x_1}{x_1 + x_2\Lambda_{12} + x_3\Lambda_{13}}
-- rac{x_2\Lambda_{21}}{x_1\Lambda_{21} + x_2 + x_3\Lambda_{23}}
-- rac{x_3\Lambda_{31}}{x_1\Lambda_{31} + x_2\Lambda_{32} + x_3}
+- \frac{x_1}{x_1 + x_2\Lambda_{12} + x_3\Lambda_{13}}
+- \frac{x_2\Lambda_{21}}{x_1\Lambda_{21} + x_2 + x_3\Lambda_{23}}
+- \frac{x_3\Lambda_{31}}{x_1\Lambda_{31} + x_2\Lambda_{32} + x_3}
 $$
 
 ## 计算过程
@@ -68,22 +68,22 @@ $$
 **1. 饱和蒸气压**
 
 $$
-egin{aligned}
-\ln P_1^{	ext{sat}} &= 15.9008 - rac{2788.51}{368.15 - 52.36} = 15.9008 - 8.830 = 7.071 \
+\begin{aligned}
+\ln P_1^{	ext{sat}} &= 15.9008 - \frac{2788.51}{368.15 - 52.36} = 15.9008 - 8.830 = 7.071 \
 P_1^{	ext{sat}} &= e^{7.071} = 1178.1\ 	ext{kPa}
 \end{aligned}
 $$
 
 $$
-egin{aligned}
-\ln P_2^{	ext{sat}} &= 16.0137 - rac{3096.52}{368.15 - 53.67} = 16.0137 - 9.847 = 6.167 \
+\begin{aligned}
+\ln P_2^{	ext{sat}} &= 16.0137 - \frac{3096.52}{368.15 - 53.67} = 16.0137 - 9.847 = 6.167 \
 P_2^{	ext{sat}} &= e^{6.167} = 475.6\ 	ext{kPa}
 \end{aligned}
 $$
 
 $$
-egin{aligned}
-\ln P_3^{	ext{sat}} &= 16.0963 - rac{3346.65}{368.15 - 57.84} = 16.0963 - 10.785 = 5.311 \
+\begin{aligned}
+\ln P_3^{	ext{sat}} &= 16.0963 - \frac{3346.65}{368.15 - 57.84} = 16.0963 - 10.785 = 5.311 \
 P_3^{	ext{sat}} &= e^{5.311} = 202.6\ 	ext{kPa}
 \end{aligned}
 $$
@@ -97,8 +97,8 @@ $$S_{21} = x_1\Lambda_{21} + x_2 + x_3\Lambda_{23} = 0.5 	imes 0.8435 + 0.25 + 0
 $$S_{31} = x_1\Lambda_{31} + x_2\Lambda_{32} + x_3 = 0.5 	imes 0.1628 + 0.25 	imes 0.6699 + 0.25 = 0.4488$$
 
 $$
-egin{aligned}
-\ln \gamma_1 &= 1 - \ln(0.6149) - rac{0.5}{0.6149} - rac{0.25 	imes 0.8435}{0.7618} - rac{0.25 	imes 0.1628}{0.4488} \
+\begin{aligned}
+\ln \gamma_1 &= 1 - \ln(0.6149) - \frac{0.5}{0.6149} - \frac{0.25 	imes 0.8435}{0.7618} - \frac{0.25 	imes 0.1628}{0.4488} \
 &= 1 + 0.486 - 0.813 - 0.277 - 0.091 = 0.305 \
 \gamma_1 &= e^{0.305} = 1.357
 \end{aligned}
@@ -110,9 +110,9 @@ $$\gamma_2 = 1.152, \quad \gamma_3 = 1.089$$
 **3. 相平衡常数和泡点检验**
 
 $$
-K_1 = rac{1.357 	imes 1178.1}{100} = 15.99,\quad
-K_2 = rac{1.152 	imes 475.6}{100} = 5.48,\quad
-K_3 = rac{1.089 	imes 202.6}{100} = 2.21
+K_1 = \frac{1.357 	imes 1178.1}{100} = 15.99,\quad
+K_2 = \frac{1.152 	imes 475.6}{100} = 5.48,\quad
+K_3 = \frac{1.089 	imes 202.6}{100} = 2.21
 $$
 
 $$\sum K_i x_i = 15.99 	imes 0.5 + 5.48 	imes 0.25 + 2.21 	imes 0.25 = 9.92 \gg 1$$
@@ -133,13 +133,13 @@ $$\gamma_1 = 1.342,\ \gamma_2 = 1.148,\ \gamma_3 = 1.086$$
 
 **3. 检验**
 
-$$\sum K_i x_i = rac{1.342 	imes 824.6}{100} 	imes 0.5 + rac{1.148 	imes 321.8}{100} 	imes 0.25 + rac{1.086 	imes 131.5}{100} 	imes 0.25 = 6.74 \gg 1$$
+$$\sum K_i x_i = \frac{1.342 	imes 824.6}{100} 	imes 0.5 + \frac{1.148 	imes 321.8}{100} 	imes 0.25 + \frac{1.086 	imes 131.5}{100} 	imes 0.25 = 6.74 \gg 1$$
 
 温度仍然偏高。
 
 ### 继续试差...
 
-经过多次迭代，收敛至平衡温度 $T_b pprox 365.8$ K（约 92.6°C，此为示意值，实际取决于 Wilson 参数精确值）。
+经过多次迭代，收敛至平衡温度 $T_b pprox 365.8$ K（约 92.6°C，此为示意值，实际取决于 Wilson 参数精确值）。
 
 ## 答案
 
