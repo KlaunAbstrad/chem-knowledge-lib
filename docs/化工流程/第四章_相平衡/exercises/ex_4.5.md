@@ -35,25 +35,25 @@
 
 需要试差求解泡点温度 $T_b$。
 
-### 第一次试差：假设 $T = 80^\circ$C = 353.15 K
+### 第一次试差：假设 $T = 80^\circ\mathrm{C}$ = 353.15 K
 
 $$
 \begin{aligned}
-P_{nC_6}^{\text{sat}} &= \exp\left(16.1915 - \frac{3696.49}{353.15 - 47.39}\right) = \exp(4.080) = 59.1\text{ kPa} \\
+P_{nC_6}^{\text{sat}} &= \exp\left(16.1915 - \frac{3696.49}{353.15 - 47.39}\right) = \exp(4.080) = 59.1\ \mathrm{kPa} \\
 K_1 &= 59.1/101.3 = 0.583
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-P_{nC_7}^{\text{sat}} &= \exp\left(16.3117 - \frac{3936.86}{353.15 - 53.37}\right) = \exp(3.348) = 28.4\text{ kPa} \\
+P_{nC_7}^{\text{sat}} &= \exp\left(16.3117 - \frac{3936.86}{353.15 - 53.37}\right) = \exp(3.348) = 28.4\ \mathrm{kPa} \\
 K_2 &= 28.4/101.3 = 0.280
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-P_{nC_8}^{\text{sat}} &= \exp\left(16.4381 - \frac{4171.46}{353.15 - 59.11}\right) = \exp(2.744) = 15.5\text{ kPa} \\
+P_{nC_8}^{\text{sat}} &= \exp\left(16.4381 - \frac{4171.46}{353.15 - 59.11}\right) = \exp(2.744) = 15.5\ \mathrm{kPa} \\
 K_3 &= 15.5/101.3 = 0.153
 \end{aligned}
 $$
@@ -62,39 +62,39 @@ $$\sum K_i x_i = 0.583 \times 0.45 + 0.280 \times 0.25 + 0.153 \times 0.30 = 0.3
 
 $\sum K_i x_i < 1$，温度偏低，需升高温度。
 
-### 第二次试差：假设 $T = 100^\circ$C = 373.15 K
+### 第二次试差：假设 $T = 100^\circ\mathrm{C}$ = 373.15 K
 
-$$P_{nC_6}^{\text{sat}} = 104.2\text{ kPa},\ K_1 = 1.029$$
-$$P_{nC_7}^{\text{sat}} = 53.4\text{ kPa},\ K_2 = 0.527$$
-$$P_{nC_8}^{\text{sat}} = 31.3\text{ kPa},\ K_3 = 0.309$$
+$$P_{nC_6}^{\text{sat}} = 104.2\ \mathrm{kPa},\ K_1 = 1.029$$
+$$P_{nC_7}^{\text{sat}} = 53.4\ \mathrm{kPa},\ K_2 = 0.527$$
+$$P_{nC_8}^{\text{sat}} = 31.3\ \mathrm{kPa},\ K_3 = 0.309$$
 
 $$\sum K_i x_i = 1.029 \times 0.45 + 0.527 \times 0.25 + 0.309 \times 0.30 = 0.686 < 1$$
 
 温度仍偏低。
 
-### 第三次试差：假设 $T = 120^\circ$C = 393.15 K
+### 第三次试差：假设 $T = 120^\circ\mathrm{C}$ = 393.15 K
 
-$$P_{nC_6}^{\text{sat}} = 172.0\text{ kPa},\ K_1 = 1.698$$
-$$P_{nC_7}^{\text{sat}} = 93.4\text{ kPa},\ K_2 = 0.922$$
-$$P_{nC_8}^{\text{sat}} = 57.6\text{ kPa},\ K_3 = 0.569$$
+$$P_{nC_6}^{\text{sat}} = 172.0\ \mathrm{kPa},\ K_1 = 1.698$$
+$$P_{nC_7}^{\text{sat}} = 93.4\ \mathrm{kPa},\ K_2 = 0.922$$
+$$P_{nC_8}^{\text{sat}} = 57.6\ \mathrm{kPa},\ K_3 = 0.569$$
 
 $$\sum K_i x_i = 1.698 \times 0.45 + 0.922 \times 0.25 + 0.569 \times 0.30 = 1.159 > 1$$
 
-温度偏高，泡点温度在 100~120°C 之间。
+温度偏高，泡点温度在 $100$~$120^{\circ}\mathrm{C}$ 之间。
 
 ### 线性插值
 
-$$T_b \approx 100 + \frac{1 - 0.686}{1.159 - 0.686} \times 20 = 100 + 13.4 = 113.4^\circ\text{C}$$
+$$T_b \approx 100 + \frac{1 - 0.686}{1.159 - 0.686} \times 20 = 100 + 13.4 = 113.4^\circ\mathrm{C}$$
 
-### 验证：$T = 113.4^\circ$C = 386.55 K
+### 验证：$T = 113.4^\circ\mathrm{C}$ = 386.55 K
 
-$$P_{nC_6}^{\text{sat}} = 155.3\text{ kPa},\ K_1 = 1.534$$
-$$P_{nC_7}^{\text{sat}} = 82.8\text{ kPa},\ K_2 = 0.818$$
-$$P_{nC_8}^{\text{sat}} = 50.2\text{ kPa},\ K_3 = 0.496$$
+$$P_{nC_6}^{\text{sat}} = 155.3\ \mathrm{kPa},\ K_1 = 1.534$$
+$$P_{nC_7}^{\text{sat}} = 82.8\ \mathrm{kPa},\ K_2 = 0.818$$
+$$P_{nC_8}^{\text{sat}} = 50.2\ \mathrm{kPa},\ K_3 = 0.496$$
 
 $$\sum K_i x_i = 1.534 \times 0.45 + 0.818 \times 0.25 + 0.496 \times 0.30 = 1.039 \approx 1$$
 
-**泡点温度 $T_b \approx 113.4^\circ$C**
+**泡点温度 $T_b \approx 113.4^\circ\mathrm{C}$**
 
 泡点气相组成：
 $$y_i = K_i x_i$$
@@ -107,7 +107,7 @@ y_3 = 0.496 \times 0.30 = 0.149$$
 
 露点方程：$\sum y_i / K_i = 1$
 
-经过类似试差得：**$T_d \approx 125.8^\circ$C**（计算过程与泡点类似，此处略）
+经过类似试差得：**$T_d \approx 125.8^\circ\mathrm{C}$**（计算过程与泡点类似，此处略）
 
 ## (2) 闪蒸计算（50% 汽化）
 
@@ -123,11 +123,11 @@ $$f(\psi) = \sum_{i=1}^{c} \frac{(K_i - 1)z_i}{1 + \psi(K_i - 1)} = 0$$
 
 ### 试差求解闪蒸温度
 
-假设 $T = 118^\circ$C = 391.15 K：
+假设 $T = 118^\circ\mathrm{C}$ = 391.15 K：
 
-$$P_{nC_6}^{\text{sat}} = 170.1\text{ kPa},\ K_1 = 1.679$$
-$$P_{nC_7}^{\text{sat}} = 91.9\text{ kPa},\ K_2 = 0.907$$
-$$P_{nC_8}^{\text{sat}} = 56.4\text{ kPa},\ K_3 = 0.557$$
+$$P_{nC_6}^{\text{sat}} = 170.1\ \mathrm{kPa},\ K_1 = 1.679$$
+$$P_{nC_7}^{\text{sat}} = 91.9\ \mathrm{kPa},\ K_2 = 0.907$$
+$$P_{nC_8}^{\text{sat}} = 56.4\ \mathrm{kPa},\ K_3 = 0.557$$
 
 $$f(0.5) = \frac{(1.679-1) \times 0.45}{1 + 0.5 \times 0.679}
        + \frac{(0.907-1) \times 0.25}{1 + 0.5 \times (-0.093)}
@@ -136,7 +136,7 @@ $$f(0.5) = \frac{(1.679-1) \times 0.45}{1 + 0.5 \times 0.679}
 $$= \frac{0.306}{1.340} + \frac{-0.023}{0.954} + \frac{-0.133}{0.779}
   = 0.228 - 0.024 - 0.171 = 0.033 \approx 0$$
 
-**闪蒸温度 $T \approx 118^\circ$C**
+**闪蒸温度 $T \approx 118^\circ\mathrm{C}$**
 
 ### 气液相组成
 
@@ -156,14 +156,14 @@ $$x_i = \frac{z_i}{1 + \psi(K_i - 1)},\quad y_i = K_i x_i$$
 
 | 参数 | 值 |
 |------|:---:|
-| 泡点温度 $T_b$ | **113.4°C** |
-| 露点温度 $T_d$ | **125.8°C** |
+| 泡点温度 $T_b$ | **$113.4^{\circ}\mathrm{C}$** |
+| 露点温度 $T_d$ | **$125.8^{\circ}\mathrm{C}$** |
 
 ### (2) 闪蒸（50% 汽化）
 
 | 参数 | 值 |
 |------|:---:|
-| 闪蒸温度 | **118°C** |
+| 闪蒸温度 | **$118^{\circ}\mathrm{C}$** |
 | 气相分率 $\psi$ | 0.5 |
 
 **气相组成**：$y_{nC6}=0.564,\ y_{nC7}=0.238,\ y_{nC8}=0.224$

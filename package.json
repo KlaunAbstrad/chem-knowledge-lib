@@ -7,7 +7,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "postinstall": "rm -rf node_modules/markdown-it-katex/node_modules/katex && cp -r node_modules/katex node_modules/markdown-it-katex/node_modules/katex"
+    "postinstall": "node scripts/postinstall.js"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"

@@ -98,7 +98,7 @@ chem-knowledge-lib/
 
 ## 内容规范
 
-所有知识条目遵循统一的格式标准（详见 [CLAUDE.md](CLAUDE.md)）：
+所有知识条目遵循统一的格式标准（详见 [CLAUDE.md](chem-knowledge-lib/CLAUDE.md)）：
 
 - **标题** + **定义/概述**（1~2 句）
 - **详细说明**（推导、适用条件、工程意义）
