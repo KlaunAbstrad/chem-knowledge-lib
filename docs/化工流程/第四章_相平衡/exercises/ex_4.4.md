@@ -50,22 +50,19 @@ Antoine 常数（$\ln P^{\text{sat}}$ in kPa，$T$ in K）：
 
 $T = 100^\circ\mathrm{C} = 373.15$ K：
 
-$$P_1^{\text{sat}} = \exp\left(15.9008 - \frac{2788.51}{373.15 - 52.36}
-ight) = \exp(7.196) = 1332.9\ \text{kPa}$$
+$$P_1^{\text{sat}} = \exp\left(15.9008 - \frac{2788.51}{373.15 - 52.36}\right) = \exp(7.196) = 1332.9\ \mathrm{kPa}$$
 
-$$P_2^{\text{sat}} = \exp\left(16.0137 - \frac{3096.52}{373.15 - 53.67}
-ight) = \exp(6.304) = 547.5\ \text{kPa}$$
+$$P_2^{\text{sat}} = \exp\left(16.0137 - \frac{3096.52}{373.15 - 53.67}\right) = \exp(6.304) = 547.5\ \mathrm{kPa}$$
 
-$$P_3^{\text{sat}} = \exp\left(16.0963 - \frac{3346.65}{373.15 - 57.84}
-ight) = \exp(5.445) = 232.0\ \text{kPa}$$
+$$P_3^{\text{sat}} = \exp\left(16.0963 - \frac{3346.65}{373.15 - 57.84}\right) = \exp(5.445) = 232.0\ \mathrm{kPa}$$
 
 ### 2. 活度系数（近似计算）
 
 Wilson 模型参数取习题 4.3 中相近值：
 
-$$T = 373.15\ \text{K}$$
+$$T = 373.15\ \mathrm{K}$$
 
-活度系数由 Wilson 方程计算（此处以纯组分近似 $\gamma_i pprox 1$ 作为简化估算）。
+活度系数由 Wilson 方程计算（此处以纯组分近似 $\gamma_i \approx 1$ 作为简化估算）。
 
 ### 3. 相平衡常数（理想溶液近似）
 
