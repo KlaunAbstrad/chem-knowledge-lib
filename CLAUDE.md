@@ -205,12 +205,40 @@ git add . && git commit -m "新增化工原理" && git push
   - 提交信息格式：`docs: 更新 CHANGELOG — YYYY-MM-DD 改动描述`
   - 每次 CHANGELOG 更新应单独提交或与相关改动一起提交
 
-### 7.2 AI 辅助生成流水线
+### 7.2 KaTeX 兼容性检查与修复
+
+使用 `/check-katex` skill 自动检查和修复 KaTeX 兼容性问题：
+
+```bash
+# 仅检查
+/check-katex
+
+# 检查并修复
+/check-katex --fix
+
+# 检查、修复并验证
+/check-katex --fix --build
+
+# 完整流程（修复 + 验证 + 报告）
+/check-katex --fix --build --report
+```
+
+**检查内容**：
+- Unicode 下标/上标（化学式、单位）
+- 中文混入数学模式
+
+**修复规则**：
+- `CH₄` → `CH4`、`m³` → `m^3` 等
+- 中文移出 `$...$` 或用 `\text{}` 包装
+
+**验证**：修复后自动运行 `npm run build` 检查 KaTeX warning
+
+### 7.3 AI 辅助生成流水线
 
 - 将预处理后的文本提交给 Claude，按本章规则要求生成初步条目草稿
 - 人工校对后入库
 
-### 7.3 反馈驱动更新
+### 7.4 反馈驱动更新
 
 分析高频反馈，优先修正错误或补充需求强烈的知识点。
 
